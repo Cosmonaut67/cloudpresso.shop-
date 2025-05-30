@@ -179,6 +179,21 @@
             color: var(--accent-color);
         }
 
+        /* Кнопки */
+        .btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: var(--secondary-color);
+        }
+
         /* Адаптивность */
         @media (max-width: 768px) {
             .content-wrapper {
@@ -188,30 +203,6 @@
             header h1 {
                 font-size: 2em;
             }
-        }
-
-        /* Placeholder-изображения через CSS */
-        .placeholder-img {
-            background: #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #777;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        .office-photo.placeholder-img {
-            height: 300px;
-        }
-        
-        .product-card img.placeholder-img {
-            height: 180px;
-        }
-        
-        .team-member img.placeholder-img {
-            width: 150px;
-            height: 150px;
         }
     </style>
 </head>
@@ -237,7 +228,7 @@
                     <p>Наш офіс знаходиться в центрі Києва, де ви можете протестувати будь-який товар перед покупкою.</p>
                 </div>
                 <div class="image-content">
-                    <div class="office-photo placeholder-img">[Фото офісу]</div>
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Наш офіс у Києві" class="office-photo">
                 </div>
             </div>
         </section>
@@ -246,19 +237,22 @@
             <h2><i class="fas fa-shopping-bag"></i> Наші продукти</h2>
             <div class="product-grid">
                 <div class="product-card">
-                    <div class="placeholder-img">Смарт-годинники</div>
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Смарт-годинники">
                     <h3>Смарт-годинники</h3>
                     <p>Від 1 499 грн</p>
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> Детальніше</button>
                 </div>
                 <div class="product-card">
-                    <div class="placeholder-img">Гаджети для дому</div>
+                    <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Гаджети для дому">
                     <h3>Гаджети для дому</h3>
                     <p>Від 799 грн</p>
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> Детальніше</button>
                 </div>
                 <div class="product-card">
-                    <div class="placeholder-img">Аксесуари</div>
+                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5" alt="Аксесуари">
                     <h3>Аксесуари</h3>
                     <p>Від 299 грн</p>
+                    <button class="btn"><i class="fas fa-shopping-cart"></i> Детальніше</button>
                 </div>
             </div>
         </section>
@@ -267,12 +261,12 @@
             <h2><i class="fas fa-users"></i> Наша команда</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="placeholder-img" style="border-radius: 50%;">CEO</div>
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a" alt="Олександр Петренко">
                     <h3>Олександр Петренко</h3>
                     <p>Засновник та CEO</p>
                 </div>
                 <div class="team-member">
-                    <div class="placeholder-img" style="border-radius: 50%;">Менеджер</div>
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2" alt="Марія Іваненко">
                     <h3>Марія Іваненко</h3>
                     <p>Менеджер з продажів</p>
                 </div>
